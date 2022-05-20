@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // npx mix
 // npx mix watch
+// npx mix --production
 
 
 // mix.js('src/js/app.js', 'dist/app.js')
@@ -33,7 +34,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 mix.copyDirectory("src/index.html", "dist")
 mix.copyDirectory("src/images", "dist/images")
 
-mix.js('src/js/app.js', 'dist/app.js').sass('src/scss/main.scss', 'dist/main.css');
+mix.js('src/js/app.js', 'dist/app.js').sass('src/scss/main.scss', 'dist/main.css').options({
+    processCssUrls: false
+});;
 
 
 mix.browserSync({

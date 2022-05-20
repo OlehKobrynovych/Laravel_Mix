@@ -20,7 +20,6 @@ https://olehkobrynovych.github.io/Laravel_Mix
 ## Technologies
 Project uses:
 * Html
+* Sass
 * Figma
 * Laravel_Mix
-* Sass
-* css
